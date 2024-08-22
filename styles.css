@@ -1,0 +1,139 @@
+/* Main page styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fa;
+    color: #262626;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #262626;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #40a9ff;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#loadingMessage {
+    text-align: center;
+    font-style: italic;
+    color: #8c8c8c;
+}
+
+#problemDescription, #solution {
+    background-color: #f9f9fa;
+    border: 1px solid #d1d5db;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: #262626;
+}
+
+#generatePdfButton {
+    display: block;
+    margin: 20px auto;
+}
+
+/* PDF-specific styles (these will be used in the generated PDF) */
+.pdf-body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #262626;
+    line-height: 1.5;
+    background-color: #f7f9fa;
+    padding: 20px;
+}
+
+.pdf-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pdf-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #262626;
+}
+
+.pdf-section-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: #262626;
+}
+
+.pdf-content {
+    font-size: 14px;
+    color: #262626;
+}
+
+.pdf-code {
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+    background-color: #f7f9fa;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #262626;
+}
