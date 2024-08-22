@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Problem Fetcher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LeetCode Problem Fetcher</h1>
+        <div class="input-container">
+            <input type="number" id="problemNumber" placeholder="Enter LeetCode problem number">
+            <button id="fetchButton">Fetch Problem</button>
+        </div>
+        <div id="loadingMessage" class="hidden">Fetching problem... Please wait.</div>
+        <div id="content" class="hidden">
+            <h2>Problem Description</h2>
+            <div id="problemDescription"></div>
+            <h2>Solution</h2>
+            <div id="solution"></div>
+            <button id="generatePdfButton">Generate PDF</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
